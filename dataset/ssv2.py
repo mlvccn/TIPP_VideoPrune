@@ -80,7 +80,7 @@ class attack_ucf101(data.Dataset):
     def _make_dataset(self, setting):
         if not os.path.exists(setting):
             raise(RuntimeError("Setting file %s doesn't exist. Check opt.train-list and opt.val-list. " % (setting)))
-        #'/home/pingchenhao/sthv2/'
+        #'/home/yourname/sthv2/'
         target_root ='/data/somethingv2/frame/'
         clips = []
         with open(setting, 'r') as f:
