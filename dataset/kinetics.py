@@ -282,7 +282,7 @@ class VideoClsDataset(Dataset):
         #print(fname)
         
         # 定义目标路径
-        # save_base_path = "/home/pingchenhao/Kinetics-400-val/"
+        # save_base_path = "/home/yourname/Kinetics-400-val/"
         # target_folder = os.path.join(save_base_path, label, f"{sample}")
         # print(target_folder)
         
