@@ -6,7 +6,7 @@
 Video action recognition models are characterized by massive parameter scales and high computational costs, which pose significant challenges for their deployment on edge devices. Although pruning techniques for image models capture local relations among units within the single layer, they fail to capture dynamic weight correlations, leading to inaccurate importance estimation of pruning units (\eg, attention heads or tokens). Furthermore, weight redundancy during pruning may amplify perturbations, due to the non-linear mappings across several shallow layers. To address these issues, we present a global pruning method named Temporal Interaction and Perturbation Propagation (TIPP). Specifically, we develop the intra-layer temporal interaction module, which employs Granger causality to quantify dynamic functional coupling among pruning units and derives a layer weight compensation mechanism via the Schur complement. This helps to better estimate the importance of pruning units. Meanwhile, we design the inter-layer global perturbation propagation module, which models the evolution of perturbation strength using the spectral radius of the Jacobian matrix. This encourages an adaptive adjustment of pruning ratio for each layer with a survival factor. Extensive experiments on three video benchmarks (UCF101, Kinetics-400, and Sth-Sth-v2) and two image benchmarks (CIFAR100 and ImageNet) demonstrate the superiority of the proposed method over several SOTA alternatives.
 
 <p align="center">
-<img src="fig/FrameWork.png" width="1000px">
+<img src="fig/FrameWork.png" width="800px" height="450px">
 </p>
 
 ## Table of Contents
